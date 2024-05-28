@@ -1,0 +1,12 @@
+AzureKeys:
+  
+  DocumentIntelligence:
+    KEY_1: a9b43ebbe45b43b6a7f31b8aaf794ebd # Key from Azure Portal Resource page
+    KEY_2: 4035977e991d4f978f1c0cb99bef3dc5 # Secondary key from from Azure Portal Resource page
+    AZURE_ENDPOINT: https://termsheets.cognitiveservices.azure.com/
+    AZURE_REGION: eastus
+    MODEL_ID: ts2
+  
+  BlobStorage:
+    CONNECTION_STRING: DefaultEndpointsProtocol=https;AccountName=ts2;AccountKey=UL/fYklCwDLpxnKYLvLg84nUQrJRo4nuwxShhOT8gC3ZtFymf7czeywf0UzFTNB1dwUV++ptugKH+AStesxhFA==;EndpointSuffix=core.windows.net",
+    CONTAINER_NAME: ts2

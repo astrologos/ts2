@@ -1,0 +1,88 @@
+taxonomy:
+  fields:
+    CURRENCY:
+      meta: 
+        NAME: CURRENCY
+        DESCRIPTION: Currency of the bond
+      identifiers:
+        - BBG_MNEMONIC: CRNCY
+
+    LISTING:
+      meta:
+        NAME: LISTING
+        DESCRIPTION: Listing exchange of the bond
+      identifiers:
+        - BBG_MNEMONIC: LISTING_EXCH
+        
+    PERCENTAGE:
+      meta:
+        NAME: PERCENTAGE
+        DESCRIPTION: Percentage of the bond
+      identifiers:
+        - BBG_MNEMONIC: CPN
+      
+
+    ISSUER_LEI:
+      meta:
+        NAME: ISSUER_LEI
+        DESCRIPTION: Legal Entity Identifier of the issuer
+      identifiers:
+        - BBG_MNEMONIC: ISSUER_LEI
+
+    MATURITY_DATE:
+      meta:
+        NAME: MATURITY_DATE
+        DESCRIPTION: Maturity date of the bond
+      identifiers:
+        - BBG_MNEMONIC: MATURITY
+
+      ID_ISIN:
+        meta:
+          NAME: ID_ISIN
+          DESCRIPTION: ISIN of the bond
+        identifiers:
+          - BBG_MNEMONIC: ID_ISIN
+        
+      FREQUENCY:
+        meta:
+          NAME: FREQUENCY
+          DESCRIPTION: Frequency of the bond
+        identifiers:
+          - BBG_MNEMONIC: CPN_FREQ  
+        
+      TRADE_DATE:
+        meta:
+          NAME: TRADE_DATE
+          DESCRIPTION: Trade date of the bond
+        identifiers:
+          - BBG_MNEMONIC: TRADE_DT
+
+      INTEREST_TYPE:
+        meta:
+          NAME: INTEREST_TYPE
+          DESCRIPTION: Interest type of the bond
+        identifiers:
+          - BBG_MNEMONIC: CPN_TYP
+
+  schema:
+    results:
+      # Data from Bloomberg as source
+      BBG: 
+        RAW_VALUE: ~              # Raw value from Bloomberg
+        CLEAN_LOOKUP_VALUE: ~     # Cleaned-up value from Bloomberg
+      
+      # Data from AI model as source
+      DOC_MODEL:
+        RAW_EXTRACTED_VALUE: ~    # Raw value extracted by the AI model
+        CLEAN_EXTRACTED_VALUE: ~  # Cleaned-up value extracted by the AI model
+        ENTITY_CONFIDENCE: ~      # Confidence score of the extracted value
+      
+      # Reconciled data 
+      RECON:
+          WINNER_VALUE: ~         # Reconciled value
+          WINNER_SOURCE: ~        # Source of the reconciled value
+          LEVENSHTIEN: ~          # Levenshtein distance between the two values
+          JACCARD: ~              # Jaccard similarity between the two values
+          MATCH_SCORE: ~          # Match score between the two values
+          VALUE_FLAG: ~           # Flag indicating if the value is valid or not
+          VALUE_EMPTY_FLAG: ~     # Flag indicating if the value is empty or not

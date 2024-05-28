@@ -1,12 +1,12 @@
 AzureKeys:
   
   DocumentIntelligence:
-    KEY_1: (enter_key_here) # # Key from Azure Portal Resource page
-    KEY_2: (enter_key_here) # # Secondary key from from Azure Portal Resource page
+    KEY_1: 
+    KEY_2: 
     AZURE_ENDPOINT: https://termsheets.cognitiveservices.azure.com/
     AZURE_REGION: eastus
     MODEL_ID: ts2
   
   BlobStorage:
-    CONNECTION_STRING: (enter_key_here) #
+    CONNECTION_STRING: 
     CONTAINER_NAME: ts2
